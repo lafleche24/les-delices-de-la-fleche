@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les Délices de la Flèche</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #fffaf3;
+}
+header {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+header h1 { color: #66834b; margin: 0; }
+header p { margin-bottom: 0; color: #777; }
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  padding: 15px;
+  background: #66834b;
+}
+nav a { color: white; text-decoration: none; }
+.hero {
+  text-align: center;
+  padding: 65px 20px;
+  background: #edf1e5;
+}
+.hero h2 { font-size: 32px; color: #526d3b; }
+.hero p { font-size: 17px; line-height: 1.6; }
+button {
+  background: #66834b;
+  color: white;
+  border: 0;
+  border-radius: 25px;
+  padding: 13px 22px;
+  cursor: pointer;
+}
+section { padding: 35px 20px; max-width: 1000px; margin: auto; }
+section h2 { color: #526d3b; text-align: center; }
+.search { display: block; width: 100%; max-width: 500px;
+  margin: 20px auto; padding: 14px; border: 1px solid #ccc;
+  border-radius: 25px; font-size: 16px; }
+.recettes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px #00000010;
+}
+.card h3 { color: #66834b; }
+.price { font-weight: bold; color: #b36d35; }
+.info {
+  background: #edf1e5;
+  text-align: center;
+  border-radius: 15px;
+  padding: 25px;
+}
+footer {
+  background: #526d3b;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌿 Les Délices de la Flèche</h1>
+  <p>Bien manger sans se ruiner.</p>
+</header>
+
+<nav>
+  <a href="#accueil">Accueil</a>
+  <a href="#recettes">Nos recettes</a>
+  <a href="#budget">Petit budget</a>
+  <a href="#anti-gaspi">Anti-gaspillage</a>
+</nav>
+
+<div class="hero" id="accueil">
+  <h2>La gourmandise accessible à tous !</h2>
+  <p>Des recettes simples, économiques et généreuses.<br>
+  Parce que bien manger ne devrait jamais être un luxe.</p>
+  <a href="#recettes"><button>Découvrir les recettes</button></a>
+</div>
+
+<section id="recettes">
+  <h2>Nos premières recettes</h2>
+  <input class="search" id="recherche"
+    placeholder="Rechercher une recette...">
+
+  <div class="recettes" id="liste">
+    <article class="card">
+      <h3>🍝 Pâtes à la tomate</h3>
+      <p>Un grand classique, simple et savoureux.</p>
+      <p class="price">Coût indicatif : 0,80 € / personne</p>
+      <p>20 minutes · Facile</p>
+    </article>
+
+    <article class="card">
+      <h3>🥣 Lentilles aux légumes</h3>
+      <p>Un plat nourrissant et réconfortant.</p>
+      <p class="price">Coût indicatif : 0,90 € / personne</p>
+      <p>35 minutes · Facile</p>
+    </article>
+
+    <article class="card">
+      <h3>🥔 Omelette aux pommes de terre</h3>
+      <p>Une recette familiale et économique.</p>
+      <p class="price">Coût indicatif : 1,00 € / personne</p>
+      <p>25 minutes · Facile</p>
+    </article>
+  </div>
+  <p style="text-align:center;font-size:13px;color:#777">
+    Les coûts sont des exemples indicatifs, à ajuster selon les prix locaux.
+  </p>
+</section>
+
+<section id="budget">
+  <div class="info">
+    <h2>💚 Cuisiner avec un petit budget</h2>
+    <p>Notre mission : aider chaque famille à préparer de bons repas
+    sans dépasser son budget.</p>
+  </div>
+</section>
+
+<section id="anti-gaspi">
+  <div class="info">
+    <h2>♻️ Rien ne se perd, tout se cuisine !</h2>
+    <p>Des astuces pour transformer les restes en délicieux repas
+    et éviter le gaspillage alimentaire.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Les Délices de la Flèche</p>
+  <p>Bien manger, mieux dépenser, ne rien gaspiller.</p>
+  <p>© 2026 - Tous droits réservés</p>
+</footer>
+
+<script>
+document.getElementById("recherche").addEventListener("input", function() {
+  const terme = this.value.toLowerCase();
+  document.querySelectorAll(".card").forEach(function(carte) {
+    carte.style.display = carte.innerText.toLowerCase().includes(terme)
+      ? "" : "none";
+  });
+});
+</script>
+
+</body>
+</html>
