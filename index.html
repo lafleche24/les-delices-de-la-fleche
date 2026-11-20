@@ -1,166 +1,26 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Les Délices de la Flèche</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Les Délices de la Flèche : recettes du monde, menus de la semaine et cuisine familiale à petit budget. Des idées gourmandes et anti-gaspillage.">
+<meta name="theme-color" content="#f7f0e5"><title>Les Délices de la Flèche — Bien manger sans se ruiner</title>
 <style>
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
-  background: #fffaf3;
-}
-header {
-  background: #fff;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px solid #eee;
-}
-header h1 { color: #66834b; margin: 0; }
-header p { margin-bottom: 0; color: #777; }
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 22px;
-  flex-wrap: wrap;
-  padding: 15px;
-  background: #66834b;
-}
-nav a { color: white; text-decoration: none; }
-.hero {
-  text-align: center;
-  padding: 65px 20px;
-  background: #edf1e5;
-}
-.hero h2 { font-size: 32px; color: #526d3b; }
-.hero p { font-size: 17px; line-height: 1.6; }
-button {
-  background: #66834b;
-  color: white;
-  border: 0;
-  border-radius: 25px;
-  padding: 13px 22px;
-  cursor: pointer;
-}
-section { padding: 35px 20px; max-width: 1000px; margin: auto; }
-section h2 { color: #526d3b; text-align: center; }
-.search { display: block; width: 100%; max-width: 500px;
-  margin: 20px auto; padding: 14px; border: 1px solid #ccc;
-  border-radius: 25px; font-size: 16px; }
-.recettes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-.card {
-  background: white;
-  padding: 22px;
-  border-radius: 14px;
-  box-shadow: 0 3px 12px #00000010;
-}
-.card h3 { color: #66834b; }
-.price { font-weight: bold; color: #b36d35; }
-.info {
-  background: #edf1e5;
-  text-align: center;
-  border-radius: 15px;
-  padding: 25px;
-}
-footer {
-  background: #526d3b;
-  color: white;
-  text-align: center;
-  padding: 25px;
-}
-</style>
-</head>
-<body>
-
-<header>
-  <h1>🌿 Les Délices de la Flèche</h1>
-  <p>Bien manger sans se ruiner.</p>
-</header>
-
-<nav>
-  <a href="#accueil">Accueil</a>
-  <a href="#recettes">Nos recettes</a>
-  <a href="#budget">Petit budget</a>
-  <a href="#anti-gaspi">Anti-gaspillage</a>
-</nav>
-
-<div class="hero" id="accueil">
-  <h2>La gourmandise accessible à tous !</h2>
-  <p>Des recettes simples, économiques et généreuses.<br>
-  Parce que bien manger ne devrait jamais être un luxe.</p>
-  <a href="#recettes"><button>Découvrir les recettes</button></a>
-</div>
-
-<section id="recettes">
-  <h2>Nos premières recettes</h2>
-  <input class="search" id="recherche"
-    placeholder="Rechercher une recette...">
-
-  <div class="recettes" id="liste">
-    <article class="card">
-      <h3>🍝 Pâtes à la tomate</h3>
-      <p>Un grand classique, simple et savoureux.</p>
-      <p class="price">Coût indicatif : 0,80 € / personne</p>
-      <p>20 minutes · Facile</p>
-    </article>
-
-    <article class="card">
-      <h3>🥣 Lentilles aux légumes</h3>
-      <p>Un plat nourrissant et réconfortant.</p>
-      <p class="price">Coût indicatif : 0,90 € / personne</p>
-      <p>35 minutes · Facile</p>
-    </article>
-
-    <article class="card">
-      <h3>🥔 Omelette aux pommes de terre</h3>
-      <p>Une recette familiale et économique.</p>
-      <p class="price">Coût indicatif : 1,00 € / personne</p>
-      <p>25 minutes · Facile</p>
-    </article>
-  </div>
-  <p style="text-align:center;font-size:13px;color:#777">
-    Les coûts sont des exemples indicatifs, à ajuster selon les prix locaux.
-  </p>
-</section>
-
-<section id="budget">
-  <div class="info">
-    <h2>💚 Cuisiner avec un petit budget</h2>
-    <p>Notre mission : aider chaque famille à préparer de bons repas
-    sans dépasser son budget.</p>
-  </div>
-</section>
-
-<section id="anti-gaspi">
-  <div class="info">
-    <h2>♻️ Rien ne se perd, tout se cuisine !</h2>
-    <p>Des astuces pour transformer les restes en délicieux repas
-    et éviter le gaspillage alimentaire.</p>
-  </div>
-</section>
-
-<footer>
-  <p>Les Délices de la Flèche</p>
-  <p>Bien manger, mieux dépenser, ne rien gaspiller.</p>
-  <p>© 2026 - Tous droits réservés</p>
-</footer>
-
+:root{--cream:#f7f0e5;--paper:#fffaf2;--terra:#b96545;--terra2:#8f452f;--olive:#69734a;--ink:#302b25;--muted:#766e62;--line:#e8dccb;--shadow:0 12px 34px #49331b14}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}.top{padding:18px 0;background:var(--paper);border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px}.logo{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--olive);color:white;font-size:24px}.brand strong{font-family:Georgia,serif;font-size:1.25rem}.brand small{display:block;color:var(--muted);font-size:.78rem}.nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:14px}.nav a{text-decoration:none;font-size:.92rem;font-weight:650}.hero{padding:42px 0 28px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}.eyebrow{color:var(--terra2);font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:.75rem}.hero h1{font:clamp(2.2rem,5vw,4rem)/1.05 Georgia,serif;margin:12px 0}.hero p{color:var(--muted);font-size:1.08rem;max-width:570px}.hero img{width:100%;height:330px;object-fit:cover;border-radius:24px;box-shadow:var(--shadow)}.btn{display:inline-block;background:var(--terra);color:white;text-decoration:none;padding:12px 19px;border-radius:999px;font-weight:750;margin:8px 8px 0 0}.btn.alt{background:var(--olive)}section{padding:34px 0}.section-head{display:flex;justify-content:space-between;gap:18px;align-items:end;margin-bottom:18px}.section-head h2{font:2rem Georgia,serif;margin:0}.section-head p{color:var(--muted);margin:4px 0}.chips{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.chip{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:8px 13px;cursor:pointer;font:inherit}.chip.active{background:var(--olive);color:#fff;border-color:var(--olive)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}.card h3{font:1.35rem Georgia,serif;margin:4px 0 8px}.meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:.86rem}.price{color:var(--terra2);font-weight:850;font-size:1.08rem}.card p{color:var(--muted);margin:8px 0}.tag{display:inline-block;color:var(--olive);font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em}.recipe{margin-top:12px;border-top:1px solid var(--line);padding-top:12px}.recipe summary{cursor:pointer;color:var(--terra2);font-weight:750}.recipe h4{margin:12px 0 4px}.recipe ul,.recipe ol{padding-left:20px;margin:5px 0}.week{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.day{display:flex;gap:14px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px}.day b{min-width:92px;color:var(--olive)}.notice{background:#e9eadc;border-left:4px solid var(--olive);padding:15px 18px;border-radius:10px;color:#454b35}.footer{background:#38382c;color:#f7f0e5;padding:32px 0;margin-top:35px}.footer p{color:#ded6c8}.search{width:min(360px,100%);padding:11px 14px;border:1px solid var(--line);border-radius:999px;background:var(--paper);font:inherit}@media(max-width:760px){.hero-grid{grid-template-columns:1fr}.hero img{height:240px}.grid{grid-template-columns:1fr}.week{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.nav{gap:12px}}
+</style></head>
+<body><header class="top"><div class="wrap"><div class="brand"><div class="logo">✿</div><div><strong>Les Délices de la Flèche</strong><small>La cuisine généreuse, les petits budgets malins</small></div></div><nav class="nav"><a href="#recettes">Les recettes</a><a href="#menus">Menus de la semaine</a><a href="#budget">Petits budgets</a><a href="#anti-gaspi">Anti-gaspillage</a></nav></div></header>
+<main><section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Bienvenue dans notre cuisine</div><h1>Du goût, du partage… sans se ruiner.</h1><p>Des recettes simples venues d'ici et d'ailleurs, des menus familiaux et des astuces pour cuisiner bon, varié et économique.</p><a class="btn" href="#recettes">Découvrir les recettes</a><a class="btn alt" href="#menus">Voir le menu de la semaine</a></div><img src="ambiance-cuisine.png" alt="Table chaleureuse garnie de plats maison, couscous, légumes et épices"></div></section>
+<section id="recettes"><div class="wrap"><div class="section-head"><div><div class="eyebrow">À cuisiner aujourd'hui</div><h2>Nos recettes gourmandes</h2><p>Quantités prévues pour 4 personnes. Coûts indicatifs à adapter aux magasins et saisons.</p></div><input id="search" class="search" type="search" placeholder="Rechercher une recette…" aria-label="Rechercher une recette"></div><div class="chips" id="filters"><button class="chip active" data-filter="Toutes">Toutes</button><button class="chip" data-filter="Orientale">Orientale</button><button class="chip" data-filter="Française">Française</button><button class="chip" data-filter="Africaine">Africaine</button><button class="chip" data-filter="Asiatique">Asiatique</button><button class="chip" data-filter="Petit budget">Petit budget</button></div><div class="grid" id="cards">
+<article class="card" data-cat="Orientale Petit budget" data-name="couscous légumes pois chiches"><span class="tag">Orientale · Familiale</span><h3>Couscous aux légumes et pois chiches</h3><div class="meta">⏱ 20 min préparation · 35 min cuisson · 4 pers.</div><p>Un grand classique généreux, parfumé et riche en légumes.</p><div class="price">≈ 1,55 € / personne · 6,20 € le plat</div><details class="recipe"><summary>Voir la recette détaillée</summary><h4>Ingrédients</h4><ul><li>300 g de semoule moyenne</li><li>2 carottes, 2 courgettes, 1 navet</li><li>1 oignon, 1 boîte de pois chiches (240 g égouttés)</li><li>400 g de pulpe de tomate</li><li>2 c. à soupe d'huile, cumin, paprika, ras el-hanout, sel</li><li>700 ml d'eau ou de bouillon</li></ul><h4>Préparation</h4><ol><li>Émincer l'oignon et couper les légumes en morceaux.</li><li>Faire revenir l'oignon dans l'huile. Ajouter les épices et la tomate.</li><li>Ajouter carottes et navet, couvrir de bouillon et cuire 15 min.</li><li>Ajouter les courgettes et les pois chiches, poursuivre 15 à 20 min.</li><li>Préparer la semoule selon les indications du paquet, égrainer et servir avec les légumes et le bouillon.</li></ol><p><b>Astuce :</b> remplacer un légume par celui qui reste dans le bac à légumes.</p></details></article>
+<article class="card" data-cat="Française Petit budget" data-name="gratin pommes de terre lentilles"><span class="tag">Française · Petit budget</span><h3>Gratin de pommes de terre aux lentilles</h3><div class="meta">⏱ 15 min préparation · 40 min cuisson · 4 pers.</div><p>Un plat complet, réconfortant et facile à préparer à l'avance.</p><div class="price">≈ 1,20 € / personne · 4,80 € le plat</div><details class="recipe"><summary>Voir la recette détaillée</summary><h4>Ingrédients</h4><ul><li>800 g de pommes de terre</li><li>200 g de lentilles vertes sèches</li><li>1 oignon, 1 carotte</li><li>20 cl de crème (ou lait), 60 g de fromage râpé</li><li>1 c. à soupe d'huile, thym, sel, poivre</li></ul><h4>Préparation</h4><ol><li>Cuire les lentilles 20 à 25 min dans l'eau frémissante, puis égoutter.</li><li>Précuire les pommes de terre en rondelles 8 min à l'eau.</li><li>Faire revenir oignon et carotte râpée, ajouter les lentilles et assaisonner.</li><li>Dans un plat, alterner pommes de terre et lentilles. Verser la crème et parsemer de fromage.</li><li>Enfourner à 190 °C pendant 20 à 25 min, jusqu'à ce que le dessus soit doré.</li></ol></details></article>
+<article class="card" data-cat="Africaine Petit budget" data-name="riz tomate haricots rouges"><span class="tag">Africaine · Végétarienne</span><h3>Riz tomate aux haricots rouges</h3><div class="meta">⏱ 10 min préparation · 25 min cuisson · 4 pers.</div><p>Un plat coloré, nourrissant et relevé juste comme il faut.</p><div class="price">≈ 1,05 € / personne · 4,20 € le plat</div><details class="recipe"><summary>Voir la recette détaillée</summary><h4>Ingrédients</h4><ul><li>300 g de riz</li><li>1 boîte de haricots rouges (240 g égouttés)</li><li>1 oignon, 1 poivron</li><li>400 g de pulpe de tomate</li><li>1 c. à soupe d'huile, ail, paprika, thym, piment facultatif</li><li>450 ml d'eau ou bouillon (à ajuster selon le riz)</li></ul><h4>Préparation</h4><ol><li>Faire revenir l'oignon, l'ail et le poivron dans l'huile.</li><li>Ajouter tomate, paprika et thym, puis laisser réduire 5 min.</li><li>Verser le riz rincé et le bouillon. Couvrir et cuire à feu doux selon le temps du riz.</li><li>Ajouter les haricots rouges égouttés pour les 5 dernières minutes.</li><li>Laisser reposer 5 min à couvert avant de servir.</li></ol></details></article>
+<article class="card" data-cat="Asiatique Petit budget" data-name="nouilles légumes omelette"><span class="tag">Asiatique · Express</span><h3>Nouilles sautées aux légumes et omelette</h3><div class="meta">⏱ 15 min préparation · 10 min cuisson · 4 pers.</div><p>Une recette rapide pour utiliser les légumes disponibles.</p><div class="price">≈ 1,35 € / personne · 5,40 € le plat</div><details class="recipe"><summary>Voir la recette détaillée</summary><h4>Ingrédients</h4><ul><li>300 g de nouilles</li><li>3 œufs</li><li>2 carottes, 1 poireau ou 1/2 chou</li><li>2 c. à soupe de sauce soja</li><li>1 c. à soupe d'huile, ail (facultatif)</li></ul><h4>Préparation</h4><ol><li>Cuire les nouilles selon le paquet et égoutter.</li><li>Couper les légumes en fines lamelles. Les faire sauter 5 à 7 min dans une grande poêle.</li><li>Battre les œufs et cuire une omelette fine, puis la couper en lanières.</li><li>Ajouter les nouilles, la sauce soja et l'omelette aux légumes.</li><li>Mélanger 2 min à feu vif et servir aussitôt.</li></ol></details></article>
+<article class="card" data-cat="Française Petit budget" data-name="soupe paysanne pain"><span class="tag">Française · Anti-gaspi</span><h3>Soupe paysanne et croûtons maison</h3><div class="meta">⏱ 15 min préparation · 25 min cuisson · 4 pers.</div><p>La recette idéale pour transformer les légumes un peu oubliés.</p><div class="price">≈ 0,90 € / personne · 3,60 € le plat</div><details class="recipe"><summary>Voir la recette détaillée</summary><h4>Ingrédients</h4><ul><li>2 carottes, 2 pommes de terre, 1 poireau</li><li>1 oignon, 1 branche de céleri (facultatif)</li><li>1,2 litre d'eau, 1 cube de bouillon</li><li>4 tranches de pain rassis</li><li>1 c. à soupe d'huile, herbes, poivre</li></ul><h4>Préparation</h4><ol><li>Laver et couper les légumes en petits dés.</li><li>Faire revenir l'oignon dans l'huile, ajouter les légumes, l'eau et le bouillon.</li><li>Cuire 25 min à petits bouillons. Mixer partiellement ou totalement selon la texture souhaitée.</li><li>Couper le pain en dés et le dorer à la poêle avec un filet d'huile.</li><li>Servir la soupe avec les croûtons et les herbes.</li></ol></details></article>
+<article class="card" data-cat="Orientale Petit budget" data-name="chakchouka oeufs tomates"><span class="tag">Orientale · Végétarienne</span><h3>Chakchouka aux œufs</h3><div class="meta">⏱ 10 min préparation · 20 min cuisson · 4 pers.</div><p>Des œufs pochés dans une sauce tomate et poivron épicée.</p><div class="price">≈ 1,30 € / personne · 5,20 € le plat</div><details class="recipe"><summary>Voir la recette détaillée</summary><h4>Ingrédients</h4><ul><li>4 à 6 œufs</li><li>1 oignon, 2 poivrons</li><li>400 g de tomates concassées</li><li>1 c. à soupe d'huile, cumin, paprika, ail, sel, poivre</li><li>Persil ou coriandre, pain pour accompagner</li></ul><h4>Préparation</h4><ol><li>Faire revenir l'oignon et les poivrons émincés 8 min dans l'huile.</li><li>Ajouter l'ail, le cumin et le paprika, puis les tomates.</li><li>Laisser mijoter 10 min jusqu'à obtenir une sauce épaisse.</li><li>Creuser des petits puits, casser les œufs dedans, couvrir et cuire 5 à 7 min selon la cuisson souhaitée.</li><li>Parsemer de persil ou coriandre et servir avec du pain.</li></ol></details></article>
+</div></div></section>
+<section id="menus"><div class="wrap"><div class="section-head"><div><div class="eyebrow">On s'organise sans se compliquer</div><h2>Menu familial de la semaine</h2><p>Exemple de 7 repas du soir pour 4 personnes, avec des ingrédients réutilisés.</p></div></div><div class="week"><div class="day"><b>Lundi</b><div><strong>Couscous aux légumes et pois chiches</strong><br><span class="meta">≈ 6,20 € · 1,55 €/pers.</span></div></div><div class="day"><b>Mardi</b><div><strong>Soupe paysanne, croûtons et fromage</strong><br><span class="meta">≈ 5,20 € · 1,30 €/pers.</span></div></div><div class="day"><b>Mercredi</b><div><strong>Riz tomate aux haricots rouges</strong><br><span class="meta">≈ 4,20 € · 1,05 €/pers.</span></div></div><div class="day"><b>Jeudi</b><div><strong>Gratin pommes de terre aux lentilles</strong><br><span class="meta">≈ 4,80 € · 1,20 €/pers.</span></div></div><div class="day"><b>Vendredi</b><div><strong>Nouilles sautées aux légumes et omelette</strong><br><span class="meta">≈ 5,40 € · 1,35 €/pers.</span></div></div><div class="day"><b>Samedi</b><div><strong>Chakchouka et pain</strong><br><span class="meta">≈ 5,20 € · 1,30 €/pers.</span></div></div><div class="day"><b>Dimanche</b><div><strong>Restes revisités : galettes de légumes et salade</strong><br><span class="meta">≈ 4,00 € · 1,00 €/pers.</span></div></div></div><p class="notice" style="margin-top:16px"><b>Budget indicatif :</b> environ 35 € pour ces 7 repas du soir pour 4 personnes (hors petits-déjeuners, déjeuners et achats de base déjà dans les placards). Les prix varient selon les enseignes, les marques et la saison.</p></div></section>
+<section id="budget"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Manger varié à prix doux</div><h2>Le coin petits budgets</h2></div></div><div class="grid"><div class="card"><h3>Les ingrédients malins</h3><p>Lentilles, pois chiches, haricots, œufs, riz, pâtes, pommes de terre et légumes de saison : des bases économiques et nourrissantes.</p></div><div class="card"><h3>Faire ses menus</h3><p>Prévoir plusieurs recettes avec les mêmes ingrédients permet de limiter les achats et d'éviter les produits oubliés.</p></div><div class="card"><h3>Cuisiner en quantité</h3><p>Préparer une double portion et conserver rapidement au frais ou congeler en portions adaptées.</p></div></div></div></section>
+<section id="anti-gaspi"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Rien ne se perd, tout se cuisine</div><h2>Nos astuces anti-gaspillage</h2></div></div><div class="notice"><b>Un reste de légumes ?</b> Transforme-le en soupe, poêlée, omelette ou galettes. <b>Du pain rassis ?</b> Fais des croûtons, du pain perdu ou de la chapelure. <b>Un reste de riz ?</b> Prépare un riz sauté avec un œuf et les légumes disponibles. Refroidir et conserver les restes rapidement au réfrigérateur, puis les consommer dans les délais adaptés.</div></div></section></main>
+<footer class="footer"><div class="wrap"><div class="brand"><div class="logo">✿</div><div><strong>Les Délices de la Flèche</strong><small style="color:#ded6c8">Les saveurs du monde, le plaisir de bien manger sans se ruiner.</small></div></div><p>Des recettes accessibles, familiales et pleines de goût. Prix donnés à titre indicatif et à actualiser selon les courses.</p><small>© Les Délices de la Flèche</small></div></footer>
 <script>
-document.getElementById("recherche").addEventListener("input", function() {
-  const terme = this.value.toLowerCase();
-  document.querySelectorAll(".card").forEach(function(carte) {
-    carte.style.display = carte.innerText.toLowerCase().includes(terme)
-      ? "" : "none";
-  });
-});
-</script>
-
-</body>
-</html>
+const chips=[...document.querySelectorAll('.chip')],cards=[...document.querySelectorAll('.card[data-cat]')],search=document.getElementById('search');let active='Toutes';function filter(){const q=search.value.toLocaleLowerCase('fr');cards.forEach(c=>{const okCat=active==='Toutes'||c.dataset.cat.includes(active);const okQ=(c.dataset.name+' '+c.innerText).toLocaleLowerCase('fr').includes(q);c.hidden=!(okCat&&okQ)})}chips.forEach(b=>b.addEventListener('click',()=>{chips.forEach(x=>x.classList.remove('active'));b.classList.add('active');active=b.dataset.filter;filter()}));search.addEventListener('input',filter);
+</script></body></html>
